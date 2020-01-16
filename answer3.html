@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="UTF-8"> 
+   
+<head>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] } });
+  </script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML">
+  </script>
+  <meta http-equiv="X-UA-Compatible" CONTENT="IE=EmulateIE7" />
+
+ <title>解答・解説3</title>
+ 
+ <link rel="stylesheet" href="style.css">
+ </head>
+ 
+ <body>
+ <div class="box29">
+    <div class="box-title">
+    <h1>解答・解説3</h1>
+    </div>
+ <p>
+ <ul>
+ <br>
+ <br>
+ 　　<div class="sample-box2">
+ 　　<br>
+ <font size="5">　順列</font><br>
+ <br>
+ 　　　　異なる\(n\)個のものの中から\(r\)個を取り出して\(1\)列に並べる順列の総数は<br>
+ 　　　　<br>
+ 　　　　<font size="4" color="red">\(_nP_r=n(n-1)(n-2) \cdots \cdots (n-r+1) = \cfrac{n!}{(n-r)!}\)</font><br>
+ 　　　　<br>
+ 　　　　特に　<font size="4">\(_nP_n=n(n-1)(n-2) \cdots \cdots 3 \cdot 2 \cdot 1= n!\)</font><br>
+ 　　　　<br>
+ 　　　　ただし,<font size="4">\(_nP_0=1,　0!=1\)と定める。</font>
+ 　　　　<br>
+ <br>
+ <font size="5">　組合せ</font><br>
+ <br>
+ 　　　　異なる\(n\)個のものの中から異なる\(r\)個を取る組合せの総数は<br>
+ 　　　　<font size="4" color="red">\(_nC_r=\cfrac{_nP_r}{r!} = \cfrac{n(n-1)(n-2)\cdots(n-r+1)}{r(r-1)\cdots 3 \cdot 2 \cdot 1} = \cfrac{n!}{r!(n-r)!}\)</font><br>
+ 　　　　<br>
+ </div>
+ <li>(1)</li>
+ <br>
+ <br>
+ <li>　①</li>
+ <li>
+ 　　　　異なる\(9\)個の球の中から\(4\)個取り出すので,\(_9C_4\)<br>
+ 　　　　次に,残りの\(5\)個の球の中から\(3\)個取り出すので,\(_5C_3\)<br>
+ 　　　　残りは,\(2\)個から\(2\)個取り出すので,\(_2C_2\)<br>
+ 　　　　<br>
+ 　　　　\(_9C_4 \times _5C_3 \times _2C_2 = 126 \times 10 \times 1 = 1260 \)通り</li><br>
+ <br>
+ <li>　②</li>
+ <li>
+ 　　　　3個ずつ3つのグループに分ける。3つのグループは区別がないので<br>
+ 　　　　<br>
+ 　　　　\(\cfrac{_9C_3 \times _6C_3 \times _3C_3}{3!} = \cfrac{84 \times 20 \times 1}{6} = 280\) 通り<br>
+ </li>
+ <br>
+ <li>　③</li>
+ <li>
+ 　　　　1個の球を\(A,B,C\)の3つのグループに分ける方法は3通りだから,9個の球について考えると,<br>
+ 　　　　\(3^9=19683\)　通り<br>
+ 　　　　<br>
+ 　　　　ⅰ)　3グループのうち1グループだけに全部分ける場合は　\(3\)　通り<br>
+ 　　　　ⅱ)　3グループのうちの2グループだけに少なくとも1個を分ける場合は<br>
+ 　　　　　　　\((2^9-2) \times 3 = 510 \times 3 = 1530\)　通り<br>
+ 　　　　<br>
+ 　　　　ⅰ),ⅱ)より,9個の球を分ける方法は<br>
+ 　　　　　　　\(19683-(3+1530)=18150\)　通り
+ 　　　　</li>
+ <br>
+ <br>
+ <li>(2)</li>
+ <li>
+ 　　　　同じ球を\(\bigcirc\)で表すと,9個の\(\bigcirc\)を並べて,仕切りの　\(\mid\)　を入れる列が何通りあるか,<br>
+ 　　　　考えるとよい。<br>
+ 　　　　<br>
+ 　　　　\(\bigcirc \bigcirc \bigcirc \mid \bigcirc \bigcirc \mid \bigcirc \bigcirc \bigcirc \bigcirc\)<br>
+ 　　　　<br>
+ 　　　　これより　\(\cfrac{11!}{9!2!} = 55\)　通り<br>
+ </li>
+ <div class="container">
+ <a href = "file:///E:/%E5%8D%92%E6%A5%AD%E7%A0%94%E7%A9%B6/%E5%8D%92%E7%A0%94/kyousai2019.html" class="btn-push">戻る</a>
+ </div>
+ </ul>
+ </p>
+ </div>
+</body>
+</html>
